@@ -30,10 +30,13 @@ export const getCandies = () => async dispatch => {
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ALL_CANDIES:    //WHY SPREAD ACTION.CANDIES????? 
-      return {...state, candies: [...state.candies, ...action.candies]}
+      return {...state, candies: action.candies }
     default:
       return state
   }
 }
 
 export default rootReducer
+
+
+// return {...state, candies: [...state.candies, ...action.candies]}
