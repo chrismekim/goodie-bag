@@ -21,7 +21,7 @@ module.exports = db.define('candy', {
 
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: 'http://www.google.com'
+    defaultValue: 'https://target.scene7.com/is/image/Target/GUEST_9766bfa7-3fcb-4f4c-9576-15e17ccc1044?wid=488&hei=488&fmt=pjpeg'
   }
 
 });

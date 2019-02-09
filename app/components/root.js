@@ -1,4 +1,7 @@
 import React from 'react'
+import store from '../store'
+import { Provider } from 'react-redux';
+import AllCandies from './AllCandies'
 
 const Root = () => {
   return (
@@ -9,6 +12,8 @@ const Root = () => {
       <main>
         <h1>Welcome to the Goodie Bag!</h1>
         <p>What a nice home page for your goodies!</p>
+          <AllCandies />
+          
       </main>
     </div>
   )
